@@ -1,0 +1,115 @@
+Create 0.5.1e
+- Addons can now more easily register custom fan processing types
+- Added tags to allow controlling which blocks and fluids act as catalysts for certain fan processing types
+- Fixed unlit campfires providing boiler heat
+- Fixed crash when applying trapdoors to copycat panels
+- Added tag to prevent specific vanilla recipe types from integrating with create
+- Rollers no longer break blocks adjacent to blocks tagged #minecraft:portals
+- Added safety checks for active rollers passing through a portal
+- Fixed rollers in fill mode consuming blocks from a train without placing any
+- Changed lava diving advancement from hidden to challenge, as it is an actual intended player ability since 0.5.1
+- Changed title of speed controller advancement
+- Funnels, Chutes and other Create components should now perform a little better when used with large vaults
+- Added support of other packet size optimisation mods: connectivity and Packet Fixer (KostromDan)
+- Spectators can no longer interact with Super Glue and Valve Handles (attackeight)
+- Fixed Elevator Contraptions sometimes powering multiple contacts upon arrival (laxadeR)
+- Fixed Deployers not able to interact with blocks using block-like items (NovaStarter)
+- Integrate new modded wood types with create: Environmental, Atmospheric, Infernal Expansion, Good Ending, Biome Makeover (Tempystral)
+- Addons can now specify custom behaviour when pipe fluids collide (Notenoughmail)
+- Localisation updates from CrowdIn
+- 1.19, 1.20: Trains can now travel to the Aether
+
+Create 0.5.1c
+- Now using Flywheel 0.6.9
+- New translations from Crowdin
+- Added the entity type tag #create:ignore_seat
+- Added a config option to prevent hostile mobs from getting picked up by seats
+- Potato cannons can no longer plant crops on the side of farmland
+- Fixed Mechanical rollers consuming filter items despite not supporting them
+- Fixed brass tunnels not refunding previous filter items when changed
+- Fixed catalyst ingredients getting consumed in the basin
+- Fixed Smart observers not activated by funnels when facing up or down
+- Fixed custom sequenced assembly recipes conflicting when starting with a filling step
+- Fixed item slots of powered and unpowered redstone link models not matching in size
+- Fixed custom fluids not rendering fog underwater
+- Fixed improved diving helmet vision applied without it being equipped
+- Fixed incompatibility with Supplementaries
+- Fixed wood cutting recipe compatibility for Hexcasting (AndreAugustoAAQ)
+- Updates to the Bogey API (rabbitminers)
+- Separated config options for placing fluid blocks with Create (attackeight)
+- Optimisations to some of Create's vector math shortcuts (Timo van Veen)
+- Addons can now register backtank-esque air sources placed in any armor and curios slots (Michael C)
+- Addressed a number of memory leaks and server crashes
+
+mcm-windows2.2
+	Added:
+	- Key, right clicking a window will close its state so it can't be opened or closed
+	- Half Pane Window Item, to simplify crafting
+	- Openable Classic Windows, the Two and Four Pane windows can now be opened again
+	- Impermeable tag for Mosaic Glass Blocks
+	 
+	Removed:
+	- Waterlogging
+	 
+	Changes:
+	- Windows can be opened again, except for resizeable windows
+	- All Window recipes have been slightly changed
+	- Window base recipe now uses glass instead of glass pane
+	- Recipes for Window Half Bar Base & Window Center Bar Base are
+	now shapeless
+	- Curtains now break when trying to move by piston
+	- Some Performance improvements
+	 
+	Translations:
+	- de_de by PatrickK01
+	- uk_ua by Moonvvell
+	 
+	Fixed Issues:
+	- "Window" type lacking recipe "Pane" type having two recipes ( Fix by Lovatic )
+	- Fixed placing issue with a few "four windows"
+	- Fixed recipe advancements ( unlock with recipe book )
+	- No recipe for Andesite Windows (and some others) 
+	- Pushing curtain with piston crashes client
+	- Some recipes are in wrong groups
+	- Can't open windows (Macaw's Windows)
+	- Can't place gothic windows on top of another without shifting
+
+moonlight-1.19.2-2.2.46
+- updated map atlas integration
+
+createaddition-1.19.2-1.1.1
+- Create 0.5.1e.
+- Wearing chainmail armor now protects you from Tesla Coil damage.
+
+rubidium-mc1.19.2-0.6.2c
+- Fixed CTM
+- Fixed block and item emissives (thanks to embeddedt for an ideas)
+- Fixed incorrect Cloud rendering in modded dimensions
+- Fixed CodeChickenLib compatibility
+- Using Forge particle culling system now (better performance)
+- Add option to create the OpenGL context (better performance, taken from new Sodium)
+- Fixed incorrect Fluid culling
+- Fixed not working Leaves option
+- Fixed not working Vignette option
+- More parity with Forge in Ambient Occlusion and Lighting
+- Memory leak fix in cloud rendering
+- Correct Immersive Engineering wire rendering in multiplayer
+- Some multipart models fixes
+- Fixed Donation button width
+- Code cleanups
+- "Fixed" NPE with chunk sections (thanks to embeddedt and bconlon)
+- Fix cloned chunk section resource leak
+- Added API for disabling mixins (thanks to Cadiboo)
+- Parity with Forge on rendering block sides (thanks to Su5eD)
+- Fixed crash when disabling fast_biome_colors option (thanks to alcatrazEscapee)
+
+oculus-mc1.19.2-1.6.9
+- Resolved particle rendering issue (while item pickup)
+- Some Cloud/Rain fixes
+- Fluid overlay fixes
+- Fixed multiple bugs with the same result; entities glowing with Complementary Unbound/Reimagined.
+- Added a partial mitigation for skyrocketing VRAM.
+
+forge-43.3.0 1.19.2 RB 3
+forge 43.2.23 Fix `Level` leak in debug HUD (#9701)
+forge 43.2.22 Keep order of sources in PackRepository (#9704)
